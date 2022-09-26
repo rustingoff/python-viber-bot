@@ -21,7 +21,7 @@ viber = Api(BotConfiguration(
     auth_token='4fde5475b5a7e0e5-a07b269d4a6405a7-a1023d748320bb57'
 ))
 
-viber.set_webhook('https://python-viber-bot2.herokuapp.com:443')
+event_types = viber.set_webhook('https://python-viber-bot2.herokuapp.com/incoming')
 
 
 @app.route('/incoming', methods=['POST'])
